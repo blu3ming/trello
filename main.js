@@ -137,7 +137,7 @@ Trello.prototype.addCard = function (name, description, listId, callback) {
 
     if (description !== null)
         query.desc = description;
-
+        
     return makeRequest(rest.post, this.uri + '/1/cards', {query: query}, callback);
 };
 
